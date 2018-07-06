@@ -1,28 +1,25 @@
-const aFor = parseFloat(prompt('Please enter a number:'));
+const aFor = parseInt(prompt('Please enter a number:'));
 
 const fFor = fibonacciFor(aFor);
-alert (fFor);
+alert ('Method: sum - Your Fibonacci number is    ' + fFor);
 
 function fibonacciFor (aFor) {
     if (aFor <= 2) return 1;
     let a = 1;
     let b = 1;
-    console.log(a);
-    console.log(b);
     let fib;
     for (let i = 3; i <= aFor; i++) {
          fib = a + b;
          a = b;
          b = fib;
-         console.log(fib);
     }
     return fib;
 }
 
-const aArr = parseFloat(prompt('Please enter a number:'));
+const aArr = parseInt(prompt('Please enter a number:'));
 
 const fArr = fibonacciArr(aArr);
-alert (fArr);
+alert ('Method: array - Your Fibonacci number is    ' + fArr);
 
 function fibonacciArr (aArr) {
     let fibArr = [1, 1];
@@ -35,10 +32,10 @@ function fibonacciArr (aArr) {
     return fibArr[fibArr.length-1];
 }
 
-const aRec = parseFloat(prompt('Please enter a number:'));
+const aRec = parseInt(prompt('Please enter a number:'));
 
 const fRec = fibonacciRec(aRec);
-alert (fRec);
+alert ('Method: recursion - Your Fibonacci number is    ' + fRec);
 
 function fibonacciRec (aRec) {
     if (aRec <= 2) return 1;
@@ -46,10 +43,10 @@ function fibonacciRec (aRec) {
 }
 
 
-const aMath = parseFloat(prompt('Please enter a number:'));
+const aMath = parseInt(prompt('Please enter a number:'));
 
 const fMath = fibonacciMath(aMath);
-alert (fMath);
+alert ('Method: formula - Your Fibonacci number is    ' + fMath);
 
 function fibonacciMath (aMath) {
     if (aRec <= 2) return 1;
