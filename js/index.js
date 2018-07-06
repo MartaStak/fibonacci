@@ -26,10 +26,7 @@ function fibonacciArr (aArr) {
     for (let i = 2; i < aArr; i++) {
         fibArr.push(fibArr[fibArr.length-1] + fibArr[fibArr.length-2]);
     }
-    for (let i = 0; i < fibArr.length; i++) {
-        console.log(fibArr[i]);
-    }
-    return fibArr[fibArr.length-1];
+    return fibArr.pop();
 }
 
 const aRec = parseInt(prompt('Please enter a number:'));
@@ -50,7 +47,6 @@ alert ('Method: formula - Your Fibonacci number is    ' + fMath);
 
 function fibonacciMath (aMath) {
     if (aRec <= 2) return 1;
-    console.log(Math.round((Math.pow((1 + Math.sqrt(5)) / 2, aMath) - Math.pow(-2 / (1 + Math.sqrt(5)), aMath)) / Math.sqrt(5)));
     return Math.round((Math.pow((1 + Math.sqrt(5)) / 2, aMath) - Math.pow(-2 / (1 + Math.sqrt(5)), aMath)) / Math.sqrt(5)) ;
 }
 
